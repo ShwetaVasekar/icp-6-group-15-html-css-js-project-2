@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Home Page</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>FoodoBAR - Home Page</title>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Fast-Food</a>
+        <a href="#" class="logo">FoodoBAR</a>
 
         <nav class="navbar">
             <a href="#"  style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">Menu</a>
+            <a href="./pages/menu.html" style="--i:2">Menu</a>
             <a href="#" style="--i:3">Service</a>
-            <a href="#" style="--i:4">About Us</a>
-            <a href="#" style="--i:5">Contact Us</a>
+            <a href="./pages/aboutindex.html" style="--i:4">About Us</a>
+            <a href="./pages/contact_us.html" style="--i:5">Contact Us</a>
         </nav>
         
-        <a href="./pages/sign_in_up.html" class="btn nav-btn">Book A Table</a>
+        <a href="./pages/sigin_up_in.html" class=" nav-btn btn" style="--i:5">Sign In/Up</a>
     </header>
 
     <section class="home">
@@ -51,6 +53,8 @@
 
     </section>
 
+    <!-- <==================  CATEGORIES  ==================> -->
+
     <div class="categories">
         <div class="categories-block">
             <div class="category-head">
@@ -65,7 +69,10 @@
                 </div>
             </div>
             <div class="category-items">
-                <div class="cat-boxes">
+                <div data-aos="fade-right"
+                style="animation-delay: 0.5s; transition: 1s;"
+                
+                 class="cat-boxes">
                     <img src="./IMAGE/home-icons/burger.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Delish Burger</h2>
@@ -74,14 +81,20 @@
                     </div>
                     
                 </div>
-                <div class="cat-boxes">
+                <div data-aos="fade-right"
+                style="animation-delay: 0.5s; transition: 1s;"
+
+                 class="cat-boxes">
                     <img src="./IMAGE/home-icons/pizza.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Cheese Pizza</h2>
                         <p>25 items</p>
                     </div>
                 </div>
-                <div class="cat-boxes">
+                <div data-aos="fade-left"
+                style="animation-delay: 0.5s; transition: 1s;"
+
+                class="cat-boxes">
                     <img src="./IMAGE/home-icons/chicken.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Chicken Bucket</h2>
@@ -89,7 +102,10 @@
                         
                     </div>
                 </div>
-                <div class="cat-boxes">
+                <div data-aos="fade-left"
+                style="animation-delay: 0.5s; transition: 1s;"
+                
+                class="cat-boxes">
                     <img src="./IMAGE/home-icons/ramen.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Ichiraku Ramen</h2>
@@ -100,6 +116,8 @@
             </div>
         </div>
     </div>
+
+    <!-- <=================== OFFERS  ===============?> -->
 
     <div class="offer">
         <div class="offer-block">
@@ -112,32 +130,242 @@
         </div>
     </div>
 
+    <!-- <=================== LOGO  ===============?> -->
+
+    <div class="logospin">
+        <div class="animatedlogo">
+            <img class="al1" src="./image/home-img/LOGO6.png" height="170px">
+            <img class="al2" src="./image/home-img/LOGO7.png" height="170px">
+        </div>
+    </div>
+
+
+
+
+    <!-- <=================== Special  ===============?> -->
+
     <div class="special-menu">
         <div class="smenu-block">
-            <div class="smenu-title">
-                <h1>Special Meun</h1>
+            <div class="smenu-title" style="font-family: 'Rubik', sans-serif;">
+                <h1>Special Menu</h1>
             </div>
-            <div class="smenu-cards">
+            <div data-aos="fade-up"
+            style="transition: 1s;"
+            
+            class="smenu-cards">
                 <div class="smenu-card1">
-                    <h3>Burger</h3>
+                    <div class="card-img">
+                        <img src="./image/home-img/smenu1.jpg">
+                    </div>
+                    <h3>PIZZA</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <button class=" btn card-btn" >Add to Cart</button>
                 </div>
                 <div class="smenu-card1">
-                    <h3>Burger</h3>
+                    <div class="card-img">
+                        <img src="./image/home-img/smenu2.jpg">
+                    </div>
+                    <h3>RICE</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <button class=" btn card-btn" >Add to Cart</button>
                 </div>
                 <div class="smenu-card1">
-                    <h3>Burger</h3>
+                    <div class="card-img">
+                        <img src="./image/home-img/smenu3.jpg">
+                    </div>
+                    <h3>GREEN SALAD</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <button class=" btn card-btn" >Add to Cart</button>
                 </div>
                 <div class="smenu-card1">
-                    <h3>Burger</h3>
+                    <div class="card-img">
+                        <img src="./image/home-img/smenu4.jpg">
+                    </div>
+                    <h3>PASTA</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <button class=" btn card-btn" >Add to Cart</button>
                 </div>
+                
             </div>
         </div>
     </div>
 
-    
+    <div class="flashbox">
+        <div class="flashycards">
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            style="transition: 1s;"
+
+            class="flashcard">
+                <img src="./image/home-img/shinebanner1.png">
+            </div>
+            <div  data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            style="transition: 1s;"
+            
+            class="flashcard">
+                <img class="alt" src="./image/home-img/shinebanner2.png">
+            </div>
+        </div>
+    </div>
+
+     <!-- /* ++++++++++++++++++++++++  Reviews  ++++++++++++++++++++++++++ */ -->
+
+     <div class="review-section">
+        <div class="review-box">
+            <div class="review-box1">
+                <h3>Testimonials</h3>
+                <h1>What Clients Says</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p>sectetur obcaecati ullam voluptates exercitationem  atque velit.</p>
+                <a href="./pages/review.html" >
+                    <button class="review-section-btn btn">See More</button>
+                </a>
+            </div>
+            <div class="review-box2">
+                <h5>⭐⭐⭐⭐⭐</h5>
+                <div class="reviewer-photo">
+                    <img src="./image/home-img/om.jpg" height="100px" width="100px">
+                    <h2>Om Nandurkar</h2>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quia explicabo nostrum consectetur obcaecati ullam voluptates exercitationem tempora atque velit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <=================  Scrolling Texts ==================> -->
+
+    <div class="scrolling-text-block">
+        <p class="marquee">
+            <span>SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER &nbsp;</span>
+          </p>
+          <!-- <p class="marquee marquee2">
+            <span>SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER •  SUBSCRIBE •  FOLLOW •  NEWSLETTER &nbsp;</span> -->
+          </p>
+    </div>
+
+
+
+
+
+
+
+    <!-- <=================  FOOTER ==================> -->
+
+    <div class="footer">
+        <div class="footer-panel">
+            <div class="footer-box">
+                <h2 class="footer-title">CONTACT</h2>
+                <h3 class="footer-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://maps.app.goo.gl/uyXARdDVsMj4DtMF6" target="_blank"><span class="footer-content">202 harmony,wagholi</span></a>
+                </h3>
+
+                <h3 class="footer-text">
+                    <i class="fa-solid fa-address-book"></i>
+                    <a href="tel:9874563214"><span>+91 9874563214</span></a>
+                </h3>
+
+                <h3 class="footer-text">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:kumarsunny1246@gmail.com"><span>kumarsunny1246@gamil.com</span></a>
+                </h3>
+
+                
+            </div>
+
+            <div class="footer-box">
+                <h2 class="footer-title">OUR LINKS</h2>
+
+                <h3 class="footer-text1">
+                    Home
+                </h3>
+
+                <h3 class="footer-text1">
+                    About Us
+                </h3>
+
+                <h3 class="footer-text1">
+                    Services
+                </h3>
+
+                <h3 class="footer-text1">
+                    Team
+                </h3>
+
+                <h3 class="footer-text1">
+                    Blog
+                </h3>
+            </div>
+
+            <div class="footer-box">
+                <h2 class="footer-title">OUR SERVICES</h2>
+
+                <h3 class="footer-text2">
+                    Strategy & Research
+                </h3>
+
+                <h3 class="footer-text2">
+                    Fast Delivery
+                </h3>
+
+                <h3 class="footer-text2">
+                    Seat Reservation
+                </h3>
+
+                <h3 class="footer-text2">
+                    Our Menu
+                </h3>
+
+            </div>
+
+            <div class="footer-box">
+                <h2 class="footer-title">HELP CENTER</h2>
+
+                <h3 class="footer-text3">
+                   FAQ
+                </h3>
+
+                <h3 class="footer-text3">
+                    Shop
+                </h3>
+
+                <h3 class="footer-text3">
+                    Category Filter
+                </h3>
+
+                <h3 class="footer-text3">
+                    Testimonials
+                </h3>
+
+                <h3 class="footer-text3">
+                    Contuct Us
+                </h3>
+
+            </div>
+
+        </div>
+    </div>
+
+
 
     <script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.12'></script>
     <script src="./JAVASCRIPT/home.js"></script>
+    <script src="https://kit.fontawesome.com/ce469df88d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
